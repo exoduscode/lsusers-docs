@@ -53,7 +53,7 @@ lsusers all --names   # shell loops and quick inspection
 
 | Platform | Official installation | Account source |
 |---|---|---|
-| Ubuntu 24.04 | Signed ExodusCode APT repository | `pwd` / NSS |
-| macOS | ExodusCode Homebrew tap | `pwd` / directory services |
+| Ubuntu 24.04 | Signed Exoduscode APT repository | `pwd` / NSS |
+| macOS | Exoduscode Homebrew tap | `pwd` / directory services |
 
 Windows and other platforms fail explicitly instead of applying an incorrect classification policy.
