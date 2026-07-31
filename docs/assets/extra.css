@@ -1,0 +1,89 @@
+:root {
+  --brand: #176b87;
+  --brand-dark: #0e4f66;
+  --ink: #17252c;
+  --surface: #f4f8fa;
+  --line: #dbe7ec;
+}
+
+body {
+  color: var(--ink);
+}
+
+.navbar {
+  background: linear-gradient(110deg, var(--brand-dark), var(--brand));
+  border: 0;
+}
+
+.navbar-brand,
+.navbar-nav > li > a {
+  color: #fff !important;
+}
+
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a {
+  color: var(--brand);
+  border-right-color: var(--brand);
+}
+
+h1, h2, h3 {
+  color: var(--brand-dark);
+  font-weight: 650;
+}
+
+h1 {
+  letter-spacing: -0.025em;
+}
+
+code {
+  color: #8d2c52;
+  background: #f7f1f4;
+}
+
+pre code {
+  color: inherit;
+  background: transparent;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.feature-grid > div {
+  padding: 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.hero-actions a {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--brand);
+  border-radius: 0.45rem;
+  text-decoration: none;
+}
+
+.hero-actions a.primary {
+  color: #fff;
+  background: var(--brand);
+}
+
+table {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

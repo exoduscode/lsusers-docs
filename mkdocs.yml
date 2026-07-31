@@ -1,0 +1,42 @@
+site_name: lsusers
+site_description: Official documentation for the lsusers command-line tool
+site_url: https://exoduscode.github.io/lsusers-docs/
+repo_url: https://github.com/exoduscode/lsusers
+repo_name: exoduscode/lsusers
+edit_uri: https://github.com/exoduscode/lsusers-docs/edit/main/docs/
+copyright: Copyright &copy; 2026 Matheus Abreu · MIT License
+
+theme:
+  name: mkdocs
+  locale: en
+  navigation_depth: 3
+  highlightjs: true
+  hljs_languages:
+    - bash
+    - json
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Commands: commands.md
+  - Examples: examples.md
+  - Output formats: output-formats.md
+  - Account classification: classification.md
+  - Installation and updates: installation.md
+  - Troubleshooting: troubleshooting.md
+  - Security: security.md
+  - Releases: releases.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - fenced_code
+  - tables
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/extra.css
+
+strict: true
